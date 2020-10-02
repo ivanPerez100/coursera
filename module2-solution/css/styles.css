@@ -1,0 +1,146 @@
+/* In this stylesheet, we are going to be implementing all of the styles 
+necessary for the index.html for module2 assignment */
+
+/* Base Styling */
+ * {
+ 	box-sizing: border-box;
+ 	font-family: Helvetica;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+div.title {
+	font-size: 150%;
+	padding: 5px;
+	margin-bottom: 50px;
+	margin-top: 40px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: max-content;
+}
+
+
+div#container1, div#container2, div#container3 {
+	background-color: #C0C0C0;
+	position: relative;
+	padding: 0px;
+	border: 1px solid black;
+	margin: 5px;
+}
+
+p#p1 {
+	background-color: #ECB19C;
+	width: 100px;
+	position: relative;
+	border: 1px solid black;
+	text-align: center;
+	float: right;
+	font-size: 100%;
+}
+
+p#p2 {
+	background-color: #755658;
+	position: relative;
+	width: 100px;
+	border: 1px solid black;
+	text-align: center;
+	float: right;
+	font-size: 100%;
+}
+
+p#p3 {
+	background-color: #567556;
+	position: relative;
+	width: 100px;
+	border: 1px solid black;
+	text-align: center;
+	float: right;
+	font-size: 100%;
+}
+
+p.text{
+	padding: 15px;
+	clear: right;
+	font-size: 75%;
+}
+
+ 
+/* Desktop Styling */
+@media (min-width: 992px){
+
+	div.title {
+		margin-bottom: 50px; 
+	}
+
+	.col-desktop-4, .col-desktop-6, .col-desktop-12{
+ 		float: left;
+ 		padding: 0.5%;
+ 	}
+
+ 	.col-desktop-4{
+ 		width: 33.33%;
+ 	}
+
+ 	.col-desktop-6{
+ 		width: 50%;
+ 	}
+
+ 	.col-desktop-12{
+ 		width: 100%;
+ 	}
+
+ }
+
+ /* Tablet Styling */
+@media (min-width: 768px) and (max-width: 991px){
+
+	div.title {
+		margin-bottom: 25px; 
+	}
+
+	.col-tablet-4, .col-tablet-6, .col-tablet-12{
+ 		float: left;
+ 		padding: 0.5%;
+ 	}
+
+ 	.col-tablet-4{
+ 		width: 33.33%;
+ 	}
+
+ 	.col-tablet-6{
+ 		width: 50%;
+ 	}
+
+ 	.col-tablet-12{
+ 		width: 100%;
+ 	}
+
+
+ }
+
+ /* Mobile Styling */
+@media (max-width: 767px){
+
+	div.title {
+		margin-bottom: 15px; 
+	}
+
+ 	.col-mobile-4, .col-mobile-6, .col-mobile-12{
+ 		float: left;
+ 		padding: 0.5%;
+ 	}
+
+ 	.col-mobile-4{
+ 		width: 33.33%;
+ 	}
+
+ 	.col-mobile-6{
+ 		width: 50%;
+ 	}
+
+ 	.col-mobile-12{
+ 		width: 100%;
+ 	}
+
+ }
