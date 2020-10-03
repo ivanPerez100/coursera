@@ -9,6 +9,9 @@ necessary for the index.html for module2 assignment */
  	padding: 0;
  }
 
+/* This is going to style the header of the page. In this case, we want the 
+header to be bigger than the rest of the text and we want it to also be in the
+center of the page as seen in the mockup illustrations*/
 div.title {
 	font-size: 150%;
 	padding: 5px;
@@ -20,8 +23,10 @@ div.title {
 	width: max-content;
 }
 
-
-div#container1, div#container2, div#container3 {
+/* This is going to style the container that is going to hold the content. This
+includes the section title and the dummy text. In otherwords, this is the grey
+box that is surrounding the content. */
+div.container {
 	background-color: #C0C0C0;
 	position: relative;
 	padding: 0px;
@@ -29,42 +34,47 @@ div#container1, div#container2, div#container3 {
 	margin: 5px;
 }
 
-p#p1 {
-	background-color: #edc8bb;
-	width: 100px;
+/* This is going to include the styling and positioning for the section title. 
+Meaning, this is going to ensure that the section title is always going to be
+on the right corner of the box, which happens to the the containter mentioned
+on the top. We also made the text a little smaller than the main title, but
+also a bit larger than the dummy text*/
+p.section {
 	position: relative;
+	width: 100px;
 	border: 1px solid black;
 	text-align: center;
 	float: right;
 	font-size: 100%;
+}
+
+/* The following three sections are just going to give the unique colors for 
+each of the section titles. We use the sepecific ID for identifying which 
+section title we want to color.*/
+p#p1 {
+	background-color: #edc8bb;
 }
 
 p#p2 {
 	background-color: #ba9ea0;
-	position: relative;
-	width: 100px;
-	border: 1px solid black;
-	text-align: center;
-	float: right;
-	font-size: 100%;
 }
 
 p#p3 {
 	background-color: #a3c4a3;
-	position: relative;
-	width: 100px;
-	border: 1px solid black;
-	text-align: center;
-	float: right;
-	font-size: 100%;
 }
 
+/* This portion is going to style the dummy text. All that was done here was 
+added some padding so that there is space between the text and the surrounding
+content. It also makes everything look less cramped. We also made the size of 
+the thext to be smaller than both the main title and the section title.*/
 p.text{
 	padding: 15px;
 	clear: right;
 	font-size: 75%;
 }
 
+/* Now, we are going to change the base styling a bit and use media queries to 
+achieve the different webpages for desktop, */
  
 /* Desktop Styling */
 @media (min-width: 992px){

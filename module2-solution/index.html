@@ -8,15 +8,26 @@
 </head>
 <body>
 
+	<!-- This is the main title of the webpage -->
 	<div class="title">
 		<h1>Our Menu</h1>
 	</div>
 
+	<!-- We have to enclose all of the content that we want to shift over into a row class as seen in lecture -->
 	<div class="row">
 
+		<!-- The following three divs are going to follow the similar structure, so it is enough to describe one. -->
+
+		<!-- We first create main div outside of all of the content. This is mainly done to ensure not only we achieve the desired spacing, but also controls how the content is going to be spaced. Within the class, we see the different classes which correspond to different media queries. In this case, if we pass the desktop query, then we would follow the col-desktop-4 class which would divide the content into 4 different columns or 33.33% of the page, allowing us to achive the 3 different boxes in the same row. When we are in tablet, then we take up 50% of the page. Lastly, when we are in mobile, then this would take up 100% of the page, having everything else stack below. -->
 		<div id="spacing1" class="col-desktop-4 col-tablet-6 col-mobile-12"> 
-			<div id="container1">
-				<p id="p1">Chicken</p>
+
+			<!-- We then create a div that has a container class. This is going to contain all of our content. In short, this is the gray box that has everything inside of. -->
+			<div class="container">
+
+				<!-- We then create the section title -->
+				<p class="section" id="p1">Chicken</p>
+
+				<!-- Lastly, we add the dummy text or text of choosing.-->
 				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -26,9 +37,10 @@
 			</div>
 		</div>
 
+		<!-- This follows the same format as above. -->
 		<div id="spacing2" class="col-desktop-4 col-tablet-6 col-mobile-12">
-			<div id="container2">
-				<p id="p2">Beef</p>
+			<div class="container">
+				<p class="section" id="p2">Beef</p>
 				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -38,9 +50,10 @@
 			</div>
 		</div>
 
+		<!-- This follows same format as above. However, the only difference is whenever we are on a tablet. Instead of taking 50% of the page, we are instead going to take up 100% of the page. What this does is make the two elements above be in the same row, but then shift this item below, taking up the whole row below. -->
 		<div id="spacing3" class="col-desktop-4 col-tablet-12 col-mobile-12">
-			<div id="container3">
-				<p id="p3">Sushi</p>
+			<div class="container">
+				<p class="section" id="p3">Sushi</p>
 				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
