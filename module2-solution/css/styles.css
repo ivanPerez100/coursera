@@ -68,7 +68,7 @@ added some padding so that there is space between the text and the surrounding
 content. It also makes everything look less cramped. We also made the size of 
 the thext to be smaller than both the main title and the section title.*/
 p.text{
-	padding: 15px;
+	padding: 20px;
 	clear: right;
 	font-size: 75%;
 }
