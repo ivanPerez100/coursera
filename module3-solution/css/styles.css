@@ -1,9 +1,6 @@
+/* Ivan Gerardo Perez Zuniga*/
 
-/* Let's first write the default styling for everything, then below we would add the media query styling the small things that we have to change */
-
-/* Header Styling; Here we are just going 
-*/
-
+/* Just some default settings that we are going to have at first*/
 * {
  	font-family: Arial, Helvetica, sans-serif;
  	margin: 0px;
@@ -11,49 +8,72 @@
  }
 
 
+/* First, let's style the header and the navbar that is 
+inside the header*/
+
+/* START OF HEADER STYLING!!! */
+
+/* This is going to style the header itself which is the bar on top that goes all the way across. What we are going to do is change the color, make all of the edges sharp, and have a border around the header.*/
 #header-nav{
 	background-color: #cccccc;
 	border-radius: 0;
 	border: 1px solid black;
 }
 
-.navbar-header{
-	margin-top: 25px;
-	margin-bottom: 25px;
+/* In here, we are just making the margin of the container to always be 0 because before it was set to 0 as default. What this caused later on was that the brand would be shifted left or right depending on the width of the page. However, we want it to always be to the left of the screen, so in order to achieve this, we just forced the margin to be 0.*/
+.container{
+	margin: 0px;
 }
 
+/* This is going to style the navbar header. What is happening here is just adding a little space to the top and the bottom of the within the header. This is so the brand doesn't look to cramped and tight within the header*/
+.navbar-header{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 
+/* This is going to style the div that holds the brand. We are not doing much but making sure that the div could always hold the content of the text, regardless of the size of the font or the screen.*/
 .navbar-brand{
 	width: max-content;
 	height: max-content;
 }
 
+/* This is going to style the actual text that represent the brand name. In here, all we are doing is making the text bold, black, a bit bigger, and adding a bit of a marging to the left so that it's not so close to the left wall of the text */
 .navbar-brand h1 { 
 	font-weight: bold;
   	color: black;
-  	font-size: 2em;
+  	font-size: 2.3em;
   	margin: 0px;
   	margin-left: 20px;
 }
 
+/* This is code that was seen in lecture which is the styling that is used to make sure that text doesn't have the look of a link. */
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 }
 
+/* In this, we are styling the actual button that could be clicked for when we want to collapse or un-collapse the navigation bar, What we are doing here is just saying when the button is active or pressed, the ouline is going to be grey. */
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 2px solid grey;
 }
 
+/* This is similar styling to the styles above, but now when the button is not pressed or the navbar is not collapsed, then it's going to be black. This is mainly done just so it could be a subtle way to show if the button was pressed or not.*/
 .navbar-header button.collapsed {
   border: 2px solid black;
 }
 
+/* Now we are going to style how the different contents of the navigaton bar are going to look like. In this case, we are making it a different color than the actual header, which is going to be straight up white. Likewise, I noticed that there was some weird space on the top and bottom of the list, so we just made the margins 0 so that there wasn't this weird border.*/
 #nav-list{
 	background-color: white;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
+/* Likewise, we want to have the white layout from above to go across the whole width of the page, so we made the padding 0 in order to achieve this effect. */
+#collapsable-nav{
+	padding: 0px;
+}
+
+/* This is going to style the actual text that is seen within the navigation bar. In this case, all we are doing is aligning the text to the center, making the text a little bigger and bolder.*/
 #nav-list a{
 	text-align: center;
 	font-size: 1.2em;
@@ -62,30 +82,38 @@
 	color: black;
 }
 
-#collapsable-nav{
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
+/* END OF HEADER STYLING!!! */
 
+
+/* START OF MAIN CONTENT STYLING!!! */
+
+/*.container-fluid{
+	padding: 0px;
+}
+*/
+
+/*
+.row {
+	margin: 0px;
+	padding: 0px;
+}*/
+
+/* We are first going to style what the color of the is going to be. In this case, it's going to be a shade of grey. Likewise, we are going to add some margins to this box in order to have some spacing that is going to clearly seperate the different continers seen within the grid.*/
 .content {
 	background-color: #C0C0C0;
+	border: .5px solid black;
+	margin: 5px;
+	margin-bottom: 15px;
 }
 
+/* Now that we have styled the box that is going to hold our content, we can now style the section heading. We had already centered the text using a bootstrap class. Now, all we have to do is make it bold and add some padding to the top so that it's not so close to the border. */
 .content h3{
 	font-weight: bold;
 	padding-top: 15px;
 }
 
+/* Lastly, all that is left to do is add some padding to the dummy text so that is not to close to the border. */
 p.text{
 	padding: 20px;
-	clear: right;
 }
 
-.row {
-	margin: 0px;
-	padding: 0px;
-}
-
-.container-fluid{
-	padding: 0px;
-}

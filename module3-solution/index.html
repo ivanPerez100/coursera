@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Ivan Gerardo Perez Zuniga -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,6 +33,7 @@
 					
 				</div> <!-- End of navbar-header div -->
 
+				<!-- This is what is going to be shown when ever we are able to see the button and press on the button. So when we press on the button, we are going to see the three different bars that we can see at the bottom. We. know to display this because at the button on top we have the attribute data-targer"#collapse-nav which happens to be that the id of the div below has. -->
 				<div id="collapsable-nav" class="collapse navbar-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
 						<li>
@@ -44,22 +46,27 @@
 							<a href="#Sushi"> Sushi </a>
 						</li>
 					</ul>
-				</div>
+				</div> <!-- End of collapsable-nav div -->
 
 			</div> <!-- End of Container div -->
 
 		</nav>
 	</header>
 
-	<!-- Add the Page Heading; We aligned the text to the center using bootstrap. This was done by adding the class "text-center" -->
+	<!-- Now that we are done with our page header, we need to know write the main content that is going to go into our page -->
+
+	<!-- First, we need to add the Page Heading; We aligned the text to the center using bootstrap. This was done by adding the class "text-center" -->
 	<div id="pageHeader" class="text-center">
 		<h1>Our Menu</h1>
 	</div>
 
+	<!-- Now that we have our page header, we are now going to write the main content as mentioned in the writeup. For this, we first need to enclose everything into a a container-fluid. After this, we need to make sure we have everything within a row div. This so that we are able to create the grid column layout, which we would later control by using the the different classes such as "col-md-4"-->
 	<div id="main-content" class="container-fluid">
+		<!-- Row div that is used to make sure we are able to create and have a grid effect -->
 		<div class="row">
 			<div id="Chicken" class="col-md-4 col-sm-6 col-xm-12">
 				<div class="content">
+					<!-- Centered using class -->
 					<h3 class="text-center"> Chicken </h3>
 					<p class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -86,10 +93,11 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br> (End of Chicken Section) <a href="#pageHeader">Back To Top</a>
 					</p>
-				</div>
-			</div>
+				</div> <!-- End of content (Chicken) div-->
+			</div> <!-- End of Chicken div -->
 			<div id="Beef" class="col-md-4 col-sm-6 col-xm-12">
 				<div class="content">
+					<!-- Centered using bootstrap class -->
 					<h3 class="text-center"> Beef </h3>
 					<p class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -116,10 +124,11 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br> (End of Beef Section) <a href="#pageHeader">Back To Top</a>
 					</p>
-				</div>
-			</div>
+				</div> <!-- End of content (Beef) div -->
+			</div> <!-- End of Beef div -->
 			<div id="Sushi" class="col-md-4 col-sm-12 col-xm-12">
 				<div class="content">
+					<!-- Centered using bookstrap class -->
 					<h3 class="text-center"> Sushi </h3>
 					<p class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -146,10 +155,10 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> (End of Sushi Section) <a href="#pageHeader">Back To Top</a>
 					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+				</div> <!-- End of content (Sushi) div -->
+			</div> <!-- End of Sushi div -->
+		</div> <!-- End of row div -->
+	</div> <!-- End of container-fluid div -->
 
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
 	<script src="js/jquery-2.1.4.min.js"></script>
