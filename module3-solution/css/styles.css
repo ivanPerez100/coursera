@@ -10,6 +10,7 @@
  	padding: 0px;
  }
 
+
 #header-nav{
 	background-color: #cccccc;
 	border-radius: 0;
@@ -39,6 +40,14 @@
 	text-decoration: none;
 }
 
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid grey;
+}
+
+.navbar-header button.collapsed {
+  border: 2px solid black;
+}
+
 #nav-list{
 	background-color: white;
 	margin-top: 0px;
@@ -50,6 +59,7 @@
 	font-size: 1.2em;
 	font-weight: bold;
 	border: 1px solid black;
+	color: black;
 }
 
 #collapsable-nav{
@@ -73,5 +83,9 @@ p.text{
 
 .row {
 	margin: 0px;
+	padding: 0px;
+}
+
+.container-fluid{
 	padding: 0px;
 }
