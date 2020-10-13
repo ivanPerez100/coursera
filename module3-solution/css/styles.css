@@ -87,16 +87,14 @@ inside the header*/
 
 /* START OF MAIN CONTENT STYLING!!! */
 
-/*.container-fluid{
+.container-fluid{
 	padding: 0px;
 }
-*/
 
-/*
 .row {
 	margin: 0px;
 	padding: 0px;
-}*/
+}
 
 /* We are first going to style what the color of the is going to be. In this case, it's going to be a shade of grey. Likewise, we are going to add some margins to this box in order to have some spacing that is going to clearly seperate the different continers seen within the grid.*/
 .content {
