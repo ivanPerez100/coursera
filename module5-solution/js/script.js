@@ -116,7 +116,7 @@ function buildAndShowHomeHTML (categories) {
 
       // All we have to do is make sure that we surround the name with quotes in order for it to work.
       var homeHtmlToInsertIntoMainPage = insertProperty(
-        homeHtml, "randomCategoryShortName", 
+        homeHtml, 'randomCategoryShortName', 
         "'" + chosenCategoryShortName.short_name + "'");
 
 
